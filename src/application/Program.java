@@ -28,9 +28,9 @@ public class Program {
 		}
 		System.out.println();
 		System.out.println("***Test 3: Find All***");
-		List<Seller> listAll = sellerDao.findAll();
+		list = sellerDao.findAll();
 		
-		for (Seller obj : listAll) {
+		for (Seller obj : list) {
 			System.out.println(obj.toString());
 		}
 
