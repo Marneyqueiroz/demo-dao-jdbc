@@ -18,28 +18,24 @@ public class Program2 {
 		
 		DepartmentDao depDao = DaoFactory.createDepartmentDao();
 		
+		
+		
 		Department dep = depDao.findByid(2);
 		
 		System.out.println("***Test 1: Find By ID***");
 		System.out.println(dep);
 		System.out.println();
-		/*
-		System.out.println("***Test 2: Find By Departmen***");
-		Department department = new Department(2,null);
-		List<Seller> list = sellerDao.findByDepartment(department);
 		
-		for (Seller obj : list) {
-			System.out.println(obj.toString());
-		}
+		
 		System.out.println();
 		System.out.println("***Test 3: Find All***");
-		list = sellerDao.findAll();
+		List<Department> list = depDao.findAll();
 		
-		for (Seller obj : list) {
+		for (Department obj : list) {
 			System.out.println(obj.toString());
 		}
 		
-		System.out.println();
+		/*System.out.println();
 		System.out.println("***Test 4: Seller Insert***");
 		Seller newSeller = new Seller(null, "Marney", "Marney@gmail.com", new Date(), 4000.0, department);
 		sellerDao.insert(newSeller);
