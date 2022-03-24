@@ -39,14 +39,14 @@ public class Program2 {
 		depDao.insert(newDepartment);
 		System.out.println("Inserted! New id = "+ newDepartment.getId());
 		
-		/*System.out.println();
-		System.out.println("***Test 5: Seller Update***");
-		seller = sellerDao.findByid(1);
-		seller.setName("Marta Waine");
-		sellerDao.update(seller);
+		System.out.println();
+		System.out.println("***Test 4: Seller Update***");
+		dep = depDao.findByid(5);
+		dep.setName("Basquete");
+		depDao.update(dep);
 		System.out.println("Updated Complited!");
 		
-		System.out.println();
+		/*System.out.println();
 		System.out.println("***Test 6: Seller Delete***");
 		System.out.println("Enter id for delete test:");
 		int id = sc.nextInt();
